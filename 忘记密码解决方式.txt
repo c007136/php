@@ -1,0 +1,11 @@
+1、编辑mysql的配置文件，确保修改的cnf文件是你mysql正在使用的配置文件，在[mysqld]段中加上：skip-grant-tables
+
+2、关闭mysql，kill掉好了
+
+3、用这个启动：mysqld_safe --skip-grant-tables，如果命令行处于假死状态不用管，只要没提示错误，另开命令行
+
+4、mysql -u root无密码登陆
+
+5、找到mysql库，修改：update user set password = PASSWORD('password') where user ='root';
+
+6、改回配置文件，再重启
