@@ -41,9 +41,9 @@ if (!$sqlArray->num_rows)
 {
 	$sql = "INSERT INTO tblTianFu (userPhone, userID, userName, adress, fengGeSeXi, 
 		muShiMian, keTingBeiJing, zhuWoBeiJing, shouNaFangAn, zengZhiBao, 
-		zengZhiPeiJian, wuYeFuWu, biZhi, roomFangAn) VALUES ($userPhone, '$userID', '$userName', '$adress',
+		zengZhiPeiJian, wuYeFuWu, biZhi, roomFangAn, roomArea) VALUES ($userPhone, '$userID', '$userName', '$adress',
 		'$fengGeSeXi', '$muShiMian', '$keTingBeiJing', '$zhuWoBeiJing', '$shouNaFangAn', '$zengZhiBao', 
-		'$zengZhiPeiJian', '$wuYeFuWu', '$biZhi', '$roomFangAn');";
+		'$zengZhiPeiJian', '$wuYeFuWu', '$biZhi', '$roomFangAn', '$roomArea');";
 
     $r = mysqli_query($conn, $sql);
 	if (!$r) {

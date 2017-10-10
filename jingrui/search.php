@@ -38,7 +38,7 @@ if($row = mysqli_fetch_assoc($sqlArray))
 	$json = array('ok' => TRUE, 'userID' => $row['userID'], 
 		'userName' => $row['userName'], 'adress' => $row['adress'],
 		'roomArea' => $row['roomArea'], 'roomFangAn' => $row['roomFangAn'],
-		'fengGeSexi' => $row['fengGeSexi'], 'muShiMian' => $row['muShiMian'],
+		'fengGeSeXi' => $row['fengGeSeXi'], 'muShiMian' => $row['muShiMian'],
 		'keTingBeiJing' => $row['keTingBeiJing'], 'zhuWoBeiJing' => $row['zhuWoBeiJing'],
 		'shouNaFangAn' => $row['shouNaFangAn'], 'zengZhiBao' => $row['zengZhiBao'],
 		'zengZhiPeiJian' => $row['zengZhiPeiJian'], 'wuYeFuWu' => $row['wuYeFuWu'],
